@@ -1,4 +1,3 @@
-```markdown
 # 🚀 Blog API avec Intégration d'une Base de Données SQL
 
 ## 📝 Description du Projet
@@ -201,4 +200,4 @@ Le dossier `/docs` contient :
 ## 📄 Licence
 
 Projet sous licence **MIT**.
-```
+
