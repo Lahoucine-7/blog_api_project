@@ -1,3 +1,4 @@
+```markdown
 # 🚀 Blog API avec Intégration d'une Base de Données SQL
 
 ## 📝 Description du Projet
@@ -46,41 +47,59 @@ L'API doit permettre :
 
 1. **Cloner le dépôt :**
 
+    ```bash
     git clone <URL_DU_DEPOT>
     cd blog_api_project
+    ```
 
 2. **Créer et activer l’environnement virtuel :**
 
+    ```bash
     python -m venv venv
+    ```
 
-    # Linux/Mac :
+    Linux/Mac :
+
+    ```bash
     source venv/bin/activate
+    ```
 
-    # Windows :
+    Windows :
+
+    ```bash
     venv\Scripts\activate
+    ```
 
 3. **Installer les dépendances :**
 
+    ```bash
     pip install -r requirements.txt
+    ```
 
 4. **Configurer les Variables d'Environnement :**
 
-    Créez un fichier `.env` à la racine avec :
+    Créer un fichier `.env` :
 
-    DATABASE_URL=postgresql://blog_user:admin@localhost/blog_db  
+    ```bash
+    DATABASE_URL=postgresql://blog_user:admin@localhost/blog_db
     TESTING=False
+    ```
 
 5. **Initialiser la Base de Données :**
 
-    - Option 1 : Utiliser le script rapide :
+    Option 1 – Script rapide :
 
-        python -m src.create_db
+    ```bash
+    python -m src.create_db
+    ```
 
-    - Option 2 : Utiliser Flask-Migrate :
+    Option 2 – Avec Flask-Migrate :
 
-        flask db init  
-        flask db migrate -m "Initial migration: création des tables"  
-        flask db upgrade
+    ```bash
+    flask db init
+    flask db migrate -m "Initial migration: création des tables"
+    flask db upgrade
+    ```
 
 ---
 
@@ -88,7 +107,9 @@ L'API doit permettre :
 
 ### 🚀 Démarrer le Serveur
 
+    ```bash
     python -m src.app
+    ```
 
 Le serveur sera disponible sur : [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
@@ -134,11 +155,15 @@ Le serveur sera disponible sur : [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
 Depuis la racine du projet :
 
+    ```bash
     python -m unittest discover tests
+    ```
 
 Ou avec Pytest :
 
+    ```bash
     pytest
+    ```
 
 Les tests couvrent :
 
@@ -171,3 +196,9 @@ Le dossier `/docs` contient :
 - Ce projet est **fictif** et destiné uniquement à un **usage pédagogique**.
 - Avant un déploiement réel, il serait nécessaire de renforcer la sécurité (authentification, validation avancée, contrôle d’accès).
 
+---
+
+## 📄 Licence
+
+Projet sous licence **MIT**.
+```
